@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Game</title>
+</head>
+<body>
+    <h1>Click the Button!</h1>
+    <p>Score: <span id="score">0</span></p>
+    <button onclick="incrementScore()">Click Me!</button>
+    <script>
+        let score = 0;
+        function incrementScore() {
+            score++;
+            document.getElementById('score').innerText = score;
+        }
+    </script>
+</body>
+</html>
